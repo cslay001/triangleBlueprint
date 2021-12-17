@@ -1,5 +1,6 @@
 package triangleBlueprint;
 
+import java.util.Scanner;
 /**
  * @author corey
  *
@@ -7,10 +8,34 @@ package triangleBlueprint;
 public class Main {
 
 	public static void main(String[] args) {
-		Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
-		Triangle triangleB = new Triangle(3,2.598,3,3,3);
 		
+		Scanner scanner = new Scanner(System.in);
 		
+		System.out.println("please input dimensons for triangle A");
+		System.out.println("base?");
+		double userTriangleBase = scanner.nextDouble();
+		
+		System.out.println("please input dimensons for triangle A");
+		System.out.println("height?");
+		double userTriangleHeight = scanner.nextDouble();
+		
+		System.out.println("please input dimensons for triangle A");
+		System.out.println("side one length?");
+		double userTriangleSideOneLen = scanner.nextDouble();
+		
+		System.out.println("please input dimensons for triangle A");
+		System.out.println("side two length?");
+		double userTriangleSideTwoLen = scanner.nextDouble();
+		
+		System.out.println("please input dimensons for triangle A");
+		System.out.println("side 3 length?");
+		double userTriangleSideThreeLen = scanner.nextDouble();
+	
+		
+		Triangle triangleA = new Triangle(userTriangleBase, userTriangleHeight, userTriangleSideOneLen, userTriangleSideTwoLen, userTriangleSideThreeLen);
+		
+		double triangleAArea = triangleA.findArea();
+		System.out.println(triangleAArea);
 	}
 
 }
