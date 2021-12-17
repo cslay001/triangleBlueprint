@@ -13,29 +13,33 @@ public class Main {
 		
 		System.out.println("please input dimensons for triangle A");
 		System.out.println("base?");
-		double userTriangleBase = scanner.nextDouble();
+		double triangleBase = scanner.nextDouble();
 		
 		System.out.println("please input dimensons for triangle A");
 		System.out.println("height?");
-		double userTriangleHeight = scanner.nextDouble();
+		double triangleHeight = scanner.nextDouble();
 		
 		System.out.println("please input dimensons for triangle A");
 		System.out.println("side one length?");
-		double userTriangleSideOneLen = scanner.nextDouble();
+		double triangleSideOneLen = scanner.nextDouble();
 		
 		System.out.println("please input dimensons for triangle A");
 		System.out.println("side two length?");
-		double userTriangleSideTwoLen = scanner.nextDouble();
+		double triangleSideTwoLen = scanner.nextDouble();
 		
 		System.out.println("please input dimensons for triangle A");
 		System.out.println("side 3 length?");
-		double userTriangleSideThreeLen = scanner.nextDouble();
+		double triangleSideThreeLen = scanner.nextDouble();
 	
 		
-		Triangle triangleA = new Triangle(userTriangleBase, userTriangleHeight, userTriangleSideOneLen, userTriangleSideTwoLen, userTriangleSideThreeLen);
+		Triangle triangleA = new Triangle(triangleBase, triangleHeight, triangleSideOneLen, triangleSideTwoLen, triangleSideThreeLen);
 		
 		double triangleAArea = triangleA.findArea();
-		System.out.println(triangleAArea);
+		System.out.println(" ");
+		System.out.println("computing area of triangle A");
+		wait(5);
+		System.out.println("*******************************************");
+		System.out.println("the area of triangle A is " + triangleAArea);
 	}
 
 }
